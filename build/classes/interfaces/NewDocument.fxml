@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--fx:controller="application.Controllers.ControllerNewDocument"-->
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerNewDocument">
+   <children>
+      <BorderPane layoutY="-9.0" prefHeight="467.0" prefWidth="880.0">
+         <top>
+            <AnchorPane prefHeight="464.0" prefWidth="880.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="26.0" layoutY="25.0" AnchorPane.rightAnchor="698.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="52.0" layoutY="30.0" prefHeight="42.0" prefWidth="800.0" style="-fx-background-color: #ADD8E6;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="8.0" text="Le plus recommande" textFill="#17109c">
+                           <font>
+                              <Font name="Arial Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ScrollPane layoutX="48.0" layoutY="115.0" prefHeight="284.0" prefWidth="808.0" styleClass="transparent" stylesheets="@../application/application.css">
+                     <content>
+                        <GridPane fx:id="BookContainer" prefHeight="10.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

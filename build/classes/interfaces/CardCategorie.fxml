@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardCategorieController">
+   <children>
+      <AnchorPane prefHeight="234.0" prefWidth="284.0" style="-fx-background-color: #Ffff; -fx-border-color: #4682B4; -fx-border-width: 5px;">
+         <children>
+            <ImageView fx:id="imageC" fitHeight="108.0" fitWidth="199.0" layoutX="85.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/télécharger%20(1).jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="libelle_cat" layoutX="14.0" layoutY="142.0" prefHeight="48.0" prefWidth="158.0" text="physique &#10;zjz">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="afficher" layoutX="169.0" layoutY="161.0" mnemonicParsing="false" onAction="#afficherC" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #0598ff; -fx-background-radius: 40px 40px 40px 40px;" text="Afficher" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

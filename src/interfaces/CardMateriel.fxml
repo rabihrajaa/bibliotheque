@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="150.0" style="-fx-border-color: #4682B4; -fx-border-width: 3px; -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardMaterielController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <ImageView fx:id="imageFx" fitHeight="195.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/R.jpeg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="nom_Mat" prefHeight="26.0" prefWidth="106.0" text="Nature kingdom" />
+            <VBox alignment="TOP_RIGHT" prefHeight="21.0" prefWidth="149.0">
+               <children>
+                  <Button fx:id="btn_emprunter" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#emprunter" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #0598ff;" text="Emprunter" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
